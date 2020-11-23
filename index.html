@@ -1,0 +1,194 @@
+<!-- https://www.data.go.kr/data/3076480/fileData.do -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모바일 화면</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <script src="js/main.js" defer></script> -->
+    <script src="./js/ajax.js" defer></script>
+    <script src="./js/123.js" defer></script>
+    <!-- <script src="js/vanilla.js" defer></script> -->
+</head>
+
+<div id="wrap">
+    <header id="header" class="on">
+        <h1 class="logo">
+            <a href="main.html">
+                <img src="images/restaurant.png" alt="걍남 로고">
+            </a>
+        </h1>
+        <div class="srch">
+            <img src="images/search.png" alt="검색">
+        </div>
+        <div class="hbr">
+            <div class="hbr1"></div>
+            <div class="hbr2"></div>
+            <div class="hbr3"></div>
+            <!-- <img src="images/hamburger.png" alt="메뉴"> -->
+        </div>
+    </header>
+    <div class="gnb">
+        <div class="exit"></div>
+        <h3>Menu</h3>
+        <ul class="gnb-menu">
+            <li><a href="main.html">홈</a></li>
+            <li><a href="list.html">맛집 랭킹</a></li>
+            <li><a href="chinese.html">중식</a></li>
+            <li><a href="western.html">양식</a></li>
+            <li><a href="korean.html">한식</a></li>
+            <li><a href="japanese.html">일식</a></li>
+        </ul>
+        <div class="contact-info">
+            <a href="sms:010-1234-5678">
+                <img src="images/chat.png" alt="">
+                <span>Text</span>
+            </a>
+            <a href="mailto:google@gmail.com">
+                <img src="images/email.png" alt="">
+                <span>Email</span>
+            </a>
+            <a href="tel:02-1234-5678">
+                <img src="images/telephone.png" alt="">
+                <span>Call</span>
+            </a>
+        </div>
+    </div>
+    <div id="container">
+        <div id="content" class="mainContent">
+            <div class="section1">
+                <!-- <img src="images/메인사진/food-1932466_960_720.jpg" alt=""> -->
+                <div class="img-bg"></div>
+            </div>
+            <div class="section2">
+                <div class="icon-wrap">
+                    <div class="imote-prev">
+                        <a href="#none"><i class="fas fa-chevron-left"></i></a>
+                    </div>
+                    <div class="imote-box">
+                        <div class="imote imote1">
+                            <a href="#none">
+                                <img src="images/flaticon/cocktail.png" alt="">
+                            </a>
+                        </div>
+                        <div class="imote imote2">
+                            <a href="#none">
+                                <img src="images/flaticon/delivery-man.png" alt="">
+                            </a>
+                        </div>
+                        <div class="imote imote3">
+                            <a href="#none">
+                                <img src="images/flaticon/burger.png" alt="">
+                            </a>
+                        </div>
+                        <div class="imote imote4">
+                            <a href="#none">
+                                <img src="images/flaticon/diet.png" alt="">
+                            </a>
+                        </div>
+                        <div class="imote imote5">
+                            <a href="#none">
+                                <img src="images/flaticon/jajangmyeon.png" alt="">
+                            </a>
+                        </div>
+                        <div class="imote imote6">
+                            <a href="#none">
+                                <img src="images/flaticon/bibimbap (1).png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="imote-next">
+                        <a href="#none"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="tabs">
+                    <div class="tabTit">
+                        <a class="tab on" href="#none" data-cuisine="*">All</a>
+                        <a class="tab" href="#none" data-cuisine="chinese">중식</a>
+                        <a class="tab" href="#none" data-cuisine="western">양식</a>
+                        <a class="tab" href="#none" data-cuisine="korean">한식</a>
+                        <a class="tab" href="#none" data-cuisine="japanese">일식</a>
+
+                    </div>
+                    <div class="tabCont_wrap">
+                        <!-- <div class="tabCont"> -->
+                            <!-- <a class="tab__item" href="#none" data-filter="chinese">
+                                <img src="./images/음식모음/rice-noodles-2284949_640.jpg" alt="">
+                            </a>
+                            <a class="tab__item" href="#none" data-filter="snack">
+                                <img src="./images/음식모음/rachel-park-hrlvr2ZlUNk-unsplash.jpg" alt="">
+                            </a>
+                            <a class="tab__item" href="#none" data-filter="snack">
+                                <img src="./images/음식모음/olayinka-babalola-r01ZopTiEV8-unsplash.jpg" alt="">
+                            </a>
+                            <a class="tab__item" href="#none" data-filter="western">
+                                <img src="./images/음식모음/rice-noodles-2284949_640.jpg" alt="">
+                            </a>
+                            <a class="tab__item" href="#none" data-filter="chinese">
+                                <img src="./images/음식모음/rice-noodles-2284949_640.jpg" alt="">
+                            </a>
+                            <a class="tab__item" href="#none" data-filter="chinese">
+                                <img src="./images/음식모음/rachel-park-hrlvr2ZlUNk-unsplash.jpg" alt="">
+                            </a>
+                            <a class="tab__item" href="#none" data-filter="korean">
+                                <img src="./images/음식모음/olayinka-babalola-r01ZopTiEV8-unsplash.jpg" alt="">
+                            </a>
+                            <a class="tab__item" href="#none" data-filter="korean">
+                                <img src="./images/음식모음/rice-noodles-2284949_640.jpg" alt="">
+                            </a>
+                            <a class="tab__item" href="#none" data-filter="chinese">
+                                <img src="./images/음식모음/rice-noodles-2284949_640.jpg" alt="">
+                            </a>
+                            <a class="tab__item" href="#none" data-filter="chinese">
+                                <img src="./images/음식모음/rachel-park-hrlvr2ZlUNk-unsplash.jpg" alt="">
+                            </a> -->
+    
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="section3" >
+                <img src="./images/메인사진/Orange and White Simple Homemade Food Business_Restaurant 16_9 Video.gif" alt="">
+                <!-- <div class="main--gif"></div> -->
+            </div>
+            <div class="main-btn" id="plusBtn">
+                <div class="btn-wrap1">
+                    <a href="#none" class="btn1">+<span class="blind">메뉴더보기</span></a>
+                </div>
+                <div class="btn-wrap3">
+                    <a href="#none" class="btn3">&lt;<span>예약하기</span></a>
+                </div>
+                <div class="btn-wrap4">
+                    <a href="#none" class="btn4">&gt;<span>올라가기</span></a>
+                </div>
+                <div class="btn-wrap2">
+                    <a href="#none" class="btn2">X<span class="blind">실행취소하기</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="quickMenu">
+        <a href="board.html">공지사항</a>
+        <a href="sitemap.html">전체서비스</a>
+        <a href="faq.html">FAQ</a>
+        <a href="login.html">로그인</a>
+    </div>
+
+    <footer id="footer">
+        <div class="copyright">
+            &copy; Gyang Nyang.
+
+        </div>
+    </footer>
+</div>
+<div id="onlyMobile">
+    이 사이트는 모바일 화면에서만 작동합니다.
+</div>
+</body>
+
+</html>
