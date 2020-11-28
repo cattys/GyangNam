@@ -37,6 +37,7 @@ img {
 
 #onlyMobile {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -47,6 +48,12 @@ img {
     background: #000000;
     color: #fff;
     z-index: 99999999;
+    text-align: center;
+    line-height: 2;
+}
+#onlyMobile i {
+    font-size: 4em;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -186,6 +193,65 @@ img {
     max-height: 100%;
 }
 
+.srch__modal--layer {
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    z-index: 99999;
+    display: none;
+}
+
+.srch__modal--layer.on {
+    display: block;
+}
+
+.srch__modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 25%;
+    background: black;
+    text-align: center;
+    padding: 30px 15px;
+}
+.srch__modal .modal__close {
+    position: absolute;
+    top: 4%;
+    right: 1%;
+    font-size: 2rem;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.modal__input {
+    margin: 30px 0 20px 0;
+}
+
+.modal__ex {
+    font-size: 14px;
+}
+.srch__modal input[type="text"]{
+    width: 70%;
+    height: 35px;
+    margin-right: 6px;
+    padding: 0 10px;
+}
+
+.srch__modal button {
+    border: none;
+    padding: 5px 7px;
+    background: white;
+    cursor: pointer;
+    outline: none;
+}
 .hbr {
     position: absolute;
     top: 50%;
@@ -456,8 +522,6 @@ img {
     background: none;
     display: block;
     transition: all 1s ease;
-
-
 }
 
 .main-btn.on .btn-wrap3 {
@@ -466,7 +530,6 @@ img {
     background: blue;
     background: none;
     transition: all 1s ease;
-
 }
 
 .main-btn.on .btn-wrap4 {
