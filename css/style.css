@@ -386,14 +386,9 @@ img {
 
 .mainContent .section2 .tabCont a {
     display: inline-block;
-    /* width: 40%; */
-    width: 42vw;
-    height: 42vw;
-    overflow: hidden;
-    text-align: center;
-    margin: 1px 0;
-    display: inline-block;
-    /* transition: all 0.3s ease; */
+    width: 40vw;
+    height: 40vw;
+    margin: 2%;
 }
 
 .mainContent .section2 .tabCont a.invisible {
@@ -401,11 +396,8 @@ img {
 }
 
 .mainContent .section2 .tabCont a img {
-    display: inline-block;
-    margin: 0 auto;
-    transform: translate(-13.5%);
-    width: 60vw;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .mainContent .section3 {
@@ -416,6 +408,7 @@ img {
     max-width: 100%;
     max-height: 100%;
 }
+
 /* 버튼 */
 .main-btn {
     position: fixed;

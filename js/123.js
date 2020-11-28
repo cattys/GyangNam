@@ -104,3 +104,14 @@ hbr.addEventListener('click', () => {
 exit.addEventListener('click', () => {
     gnb.classList.remove('on');
 })
+
+
+const prev = document.querySelector('.prev');
+prev.addEventListener('click', ()=>{
+    window.history.back();
+})
+
+const PageNone = () => {
+    alert('준비중입니다.');
+    // history.back();
+}
