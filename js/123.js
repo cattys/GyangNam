@@ -18,6 +18,25 @@ document.addEventListener('scroll', () => {
     }
 });
 
+// input focus
+const quickMenu =document.querySelector('.quickMenu');
+const footer = document.querySelector('#footer');
+let inputs = document.querySelectorAll('input');
+inputs.forEach( input => {
+    input.addEventListener('focus', ()=> {
+    console.log('adfas')
+
+        quickMenu.style.position = 'static';
+        footer.style.position = 'static';
+    })
+    input.addEventListener('blur', ()=> {
+        quickMenu.style.position = 'fixed';
+        footer.style.position = 'fixed';
+    })
+});
+
+
+
 // 메인화면 + 버튼
 if (document.querySelector('.main-btn')) {
     console.log('없음');
@@ -86,9 +105,6 @@ const PageNone = () => {
     // history.back();
 }
 
+// gotop
 
 
-// 요리법별로 뜨게 -> 뭘써야하지??
-// 로그인 유효성 검사
-// 검색창 구현
-// 터치 -> 스크롤

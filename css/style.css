@@ -138,14 +138,14 @@ img {
 }
 
 .gnb h3 {
-    margin-top: 70px;
+    margin-top: 60px;
     font-size: 48px;
     padding-bottom: 15px;
 }
 
 .gnb .gnb-menu {
     margin: 0px 20%;
-    padding: 30px 0;
+    padding: 20px 0;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
 }
@@ -312,7 +312,8 @@ img {
 
 #container {
     /* margin-top: 80px; */
-    margin-bottom: 97.6px;
+    /* margin-bottom: 97.6px; */
+    margin-bottom: 100px;
 }
 
 .quickMenu {
@@ -468,7 +469,8 @@ img {
 
 .mainContent .section3 {
     width: 100%;
-    padding: 30px 0 60px 0;
+    margin-top: 50px;
+    padding-bottom: 50px;
 }
 .mainContent .section3 img {
     max-width: 100%;
@@ -563,6 +565,24 @@ img {
 .main-btn.on .btn-wrap4.active a {
     transform: translateX(0);
 }
+
+/* 위로 가기 */
+#goTop {
+    position: fixed;
+    right: 15px;
+    bottom: 130px;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(227, 243, 7, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+
 .mini-top {
     text-align: center;
     position: relative;
@@ -737,6 +757,9 @@ img {
 }
 
 /* 전체 서비스 */
+.sitemap {
+    min-height: 400px;
+}
 .sitemap ul {
     width: 80%;
     margin: 30px auto 0;
@@ -877,8 +900,9 @@ img {
 
 /* 로그인 */
 .login-wrap {
+    min-height: 300px;
     width: 85%;
-    margin: 50px auto;
+    margin: 70px auto;
     text-align: center;
 }
 
@@ -928,6 +952,7 @@ img {
     display: inline-block;
     margin: 20px 10px;
     position: relative;
+
 }
 .rank-container .rank-inner {
     background: #fff;
@@ -955,7 +980,7 @@ img {
 }
 
 .rank-box .rank-text {
-    padding: 10px 20px;
+    padding: 10px 10px;
     /* background: red; */
 }
 
